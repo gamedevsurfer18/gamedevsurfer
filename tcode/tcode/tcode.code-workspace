@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../film-sitesi"
+		},
+		{
+			"path": "../../market_fiyat"
+		}
+	],
+	"settings": {
+		"emulator.emulatorPath": "C:\\Users\\Asus\\AppData\\Local\\Android\\Sdk"
+	}
+}

@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Electrolize&display=swap");
+
+/*! base css start */
+* {
+  margin: 0;
+}
+/*! base css end */
+body {
+  font-family: "Electrolize", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  height: 100vh;
+}
+.container{
+  background-color: black;
+  color: white;
+}
+/* ! navbar start */
+.navbar {
+  background-color: black;
+  height: 50px;
+  color: white;
+  position: sticky;
+  top: 0;
+}
+.navbar-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 0 50px;
+}
+.menu-list {
+  display: flex;
+  list-style: none;
+  column-gap: 30px;
+  padding: 0;
+}
+
+.menu-list-item {
+  cursor: pointer;
+}
+
+.menu-list-item:hover {
+  font-weight: bold;
+}
+.menu-list-item.active {
+  font-weight: bold;
+}
+.profile-container{
+display: flex;
+align-items: center;
+column-gap: 20px;
+}
+
+.profile-picture{
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.profile-text-container{
+  align-items: center;
+  column-gap: 5px;
+  line-height: 1;
+}
+.toggle{
+  width: 40px;
+  height: 20px;
+  background-color: white;
+  border-radius: 30px;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+}
+.toggle-icon{
+  color: goldenrod;
+}
+.toggle-ball{
+  width: 18px;
+  height: 18px;
+  background-color: black;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  right: 1px;
+}
+
+.logo {
+  color: rgb(255, 70, 70);
+  font-size: 30px;
+}
+/* ! navbar end */
+
+/* ! sidebar start */
+.sidebar {
+  background-color: black;
+  color: aliceblue;
+  height: 100%;
+  width: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  padding-top: 70px;
+  row-gap: 40px;
+  }
+  .sidebar i{
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+
+  }
+
+/* ! sidebar end */
+
+/* ! featured content start */
+
+.content-wrapper{
+  margin-left: 50px;
+  
+}
+.featured-content{
+  background: url(img/spiderman.jpg);
+  padding: 50px;
+  height: calc(100vh - 150px);
+  background-size: 100% 100%;
+}
+.featured-title{
+  width: 400px;
+}
+.featured-desc{
+  width: 500px;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 30px;
+  margin: 30px 0px;
+}
+.featured-buttons{
+  display: flex;
+  column-gap: 20px;
+}
+.featured-buttons button{
+  padding: 10px 25px;
+  border-radius: 2px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  column-gap: 10px;
+  display: flex;
+  flex-direction: row;
+  font-size: 16px;
+  font-weight: bold;
+   
+}
+.info-button{
+  background-color: rgba(190, 178, 178, 0.853)
+}
+
+/* ! featured content end */
+
+/* filter start */
+.movie-list-filter{
+  margin: 20px 0 20px 50px;
+  padding-left: 20px;
+}
+.movie-list-filter select{
+  background-color: black;
+  color: white;
+  padding: 8px 0;
+  width: 125px;
+}
+
+/* filter end */
+
+/* movie list start */
+.movie-list-container{
+  margin-left: 70px;
+}
+.movie-list{
+  list-style: none;
+  padding: 0;
+  }
+  .movie-item-img{
+    width: 270px;
+  }
+/* movie list end */
+

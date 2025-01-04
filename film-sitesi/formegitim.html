@@ -1,0 +1,33 @@
+<form action="basarili.html" method="get" target="basarili.html" accept-charset="UTF-8"  >
+<fieldset>
+<legend>Kişisel Bilgiler</legend>
+    Ad: <input type="text" name="ad" placeholder="Ad" required><br>
+    Soyad: <input type="text" name="soyad" placeholder="Soyad" required><br>
+    Email: <input type="email" name="email" placeholder="Email"><br>
+    Şifre: <input type="password" name="sifre" placeholder="sifre"><br>
+</fieldset>
+<fieldset>
+<legend>İletişim Bilgileri</legend>
+    Tarih: <input type="date" name="tarih"><br>
+    Tel: <input type="tel" name="tel" placeholder="Tel"><br>
+    Renk: <input type="color" name="renk"><br>
+    Arama: <input type="search" name="arama" placeholder="Arama"><br>
+    Açıklama: <textarea name="aciklama" placeholder="Açıklama"></textarea><br>
+</fieldset>
+<fieldset>
+<legend>Diğer Bilgiler</legend>
+    <input type="radio" name="cinsiyet" value="erkek">Erkek
+    <input type="radio" name="cinsiyet" value="kadin">Kadın<br>
+    <input type="checkbox" name="hobi" value="yemek">Yemek
+    <input type="image" src="img/profile.jpg" alt="profile" width="50" height="50">
+    <input type="file" name="dosya"><br>
+    Şehir: <input name="sehir" list="sehirler" form="GezginForm" placeholder="Şehir Seçiniz">
+    <datalist id="sehirler">
+        <option value="istanbul">İstanbul</option>
+        <option value="ankara">Ankara</option>
+        <option value="izmir">İzmir</option>
+    </datalist><br>
+</fieldset>
+    <input type="submit" value="Gönder">
+    
+</form>

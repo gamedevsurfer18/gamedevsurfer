@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>B2B Sipariş Girişi</title>
+    <link rel="stylesheet" href="giriskayit.css">
+</head>
+<body>
+    <div class="container">
+        <div id="header">
+            <img src="yigitlogo.png" alt="Firma Logosu" id="logo">
+            <h1>B2B Sipariş Girişi</h1>
+        </div>
+        <div id="customer-info">
+            <label for="musteriAdi">Müşteri Adı:</label>
+            <input type="text" id="musteriAdi" name="musteriAdi">
+            <label for="cariKodu">Cari Kodu:</label>
+            <input type="text" id="cariKodu" name="cariKodu" style="width: 120px;">
+            <button class="save-customer-button" onclick="kaydetMusteri()">Müşteri Kaydet</button>
+        </div>
+        <div id="product-list">
+            <div class="product-row">
+                <h2>Ürün Bilgileri</h2>
+                <div class="table-container">
+                    <table id="product-table">
+                        <thead>
+                            <tr>
+                                <th data-col="0">Ürün Kodu</th>
+                                <th data-col="1">Ürün Tanımı</th>
+                                <th data-col="2">Özellik 1</th>
+                                <th data-col="3">Özellik 2</th>
+                                <th data-col="4">Özellik 3</th>
+                                <th data-col="5">Özellik 4</th>
+                                <th data-col="6">Özellik 5</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><input type="text" name="urunKodu[]"></td>
+                            <td><textarea name="urunTanimi[]"></textarea></td>
+                            <td><input type="text" name="ozellik1[]"></td>
+                            <td><input type="text" name="ozellik2[]"></td>
+                            <td><input type="text" name="ozellik3[]"></td>
+                            <td><input type="text" name="ozellik4[]"></td>
+                            <td><input type="text" name="ozellik5[]"></td>
+                            <td>
+                                <button onclick="kaydetUrun(this)">Kaydet</button>
+                                <button onclick="duzeltUrun(this)">Düzelt</button>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="giriskayit.js"></script>
+</body>
+</html>

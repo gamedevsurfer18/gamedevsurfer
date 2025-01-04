@@ -1,0 +1,124 @@
+body {
+  font-family: sans-serif;
+  background-color: #ffffff;
+  margin: 20px;
+}
+
+.container {
+  max-width: 1200px; /* Genişletildi */
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1,
+h2 {
+  color: #dd052b;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #575756;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+  width: calc(100% - 12px); /* İç boşlukları hesaba kat */
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+  min-width: 80px; /* Minimum genişlik */
+}
+th,
+td {
+    min-width: 80px;
+    padding: 5px;
+    text-align: left;
+    border: 1px solid #ddd; /* Çizgi kalınlığı */
+    white-space: nowrap; /* Metnin kaymasını engelle */
+    overflow: hidden; /* Taşmayı gizle */
+    text-overflow: ellipsis; /* Taşma durumunda ... göster */
+    height: 15px; /* Sabit satır yüksekliği */
+}
+
+/* Sütun ayırma çizgisini incelt */
+.resizer {
+    width: 2px; /* Daha ince çizgi */
+    background: rgba(0, 0, 0, 0.3); /* Daha belirgin bir renk */
+}
+table{
+    table-layout: fixed; /* Tablo düzenini sabitler */
+}
+td button{
+    margin: 2px;
+}
+.table-container{
+  overflow-x: auto;
+}
+button {
+  background-color: #dd052b;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #bb0022;
+}
+
+.product-row {
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+  margin-top: 10px;
+}
+
+.save-customer-button {
+  float: right;
+}
+
+/* Sütun yeniden boyutlandırma stilleri */
+th {
+  position: relative;
+}
+
+.resizer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 5px;
+  background: rgba(0, 0, 0, 0.1);
+  cursor: col-resize;
+  user-select: none;
+}
+/* ... (Önceki CSS kodları) */
+#header {
+  display: flex; /* Logo ve başlığı yan yana hizala */
+  align-items: center; /* Dikey hizalama */
+  margin-bottom: 20px;
+}
+
+#logo {
+  max-height: 80px; /* Logo yüksekliğini sınırla */
+  margin-right: 20px; /* Başlıkla aralık bırak */
+}
+
+#customer-info label {
+  display: inline-block; /* Etiketleri yan yana göster */
+  width: 100px; /* Etiket genişliğini ayarla */
+  text-align: right;
+  margin-right: 10px;
+}
+#customer-info input{
+  width: auto;
+  display: inline-block;
+}
